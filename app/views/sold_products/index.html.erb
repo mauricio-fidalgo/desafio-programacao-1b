@@ -1,0 +1,53 @@
+<h1>Dados de vendas</h1>
+
+<p><a href="#new">Adicionar Vendas</a> | <a href="#info">Formatação do arquivo</a> | <a href="#list">Listar Vendas</a></p>
+
+<hr>
+
+<p>Esta aplicação permite que você veja as vendas que foram importadas para o banco.</p>
+
+<%= form_tag do %>
+  <fieldset id="new">
+	<legend>Cadastrar Vendas</legend>
+  	<p>
+	  <%= label_tag do %>Arquivo de vendas<% end %>
+      <%= file_field_tag :sold_products_file %>
+  	</p>
+	<p><button type="submit">Salvar</button></p>
+  </fieldset>
+<% end %>
+
+<h2>Formatação do arquivo</h2>
+
+<p>Para adicionar novas vendas ao sistema basta adicionar o arquivo de vendas no formato txt.</p>
+
+<pre>
+  
+</pre>
+
+<h2 id="list">Vendas</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comprador</th>
+      <th>Descrição</th>
+      <th>Valor Und</th>
+      <th>Qtd</th>
+      <th>Valor Total</th>
+      <th>Endereço</th>
+      <th>Distribuidor</th>
+    </tr>
+  </thead>
+  <tbody> 
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
