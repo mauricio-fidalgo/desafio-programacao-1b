@@ -39,31 +39,36 @@ Snake Plissken  R$20 Sneakers for R$5   5.0 4   123 Fake St Sneaker Store Empori
 
 <h2 id="list">Vendas</h2>
 
-<p>Valor Total: <%= number_to_currency @total %></p>
-<table>
-  <thead>
-    <tr>
-      <th>Comprador</th>
-      <th>Descrição</th>
-      <th>Valor Und</th>
-      <th>Qtd</th>
-      <th>Valor Total</th>
-      <th>Endereço</th>
-      <th>Fornecedor</th>
-    </tr>
-  </thead>
-  <tbody> 
-	<% @sold_products.each do |product| %>
-    <tr>
-	  <td><%= product.buyer_name %></td>
-      <td><%= product.description %></td>
-	  <td><%= number_to_currency product.price %></td>
-	  <td><%= product.quantity %></td>
-	  <td><%= number_to_currency product.price * product.quantity %></td>
-	  <td><%= product.address %></td>
-	  <td><%= product.provider_name %></td>
-	</tr>
-	<% end %>
-  </tbody>
-</table>
+<% if @sold_products.blank? %>
+  <p><i>Nenhuma venda foi registrada, adicione vendas no <a href="#new">formulário de criação.</a></i></p>
+<% else %>
+  <p>Receita bruta total: <%= number_to_currency @total %></p>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>Comprador</th>
+        <th>Descrição</th>
+        <th>Valor Und</th>
+        <th>Qtd</th>
+        <th>Valor Total</th>
+        <th>Endereço</th>
+        <th>Fornecedor</th>
+      </tr>
+    </thead>
+    <tbody> 
+	  <% @sold_products.each do |product| %>
+        <tr>
+	      <td><%= product.buyer_name %></td>
+          <td><%= product.description %></td>
+	      <td><%= number_to_currency product.price %></td>
+	      <td><%= product.quantity %></td>
+	      <td><%= number_to_currency product.price * product.quantity %></td>
+	      <td><%= product.address %></td>
+	      <td><%= product.provider_name %></td>
+	    </tr>
+	  <% end %>
+    </tbody>
+  </table>
+<% end %>
 <p><a href="#">[Topo]</a></p>
