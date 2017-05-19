@@ -3,7 +3,9 @@ pt-BR:
   message: Mensagem
   error: Erro
   sucessfully_imported: Importado com sucesso
-  failed_to_import: Não foi possível importar os dados deste arquivosiga as instruções de envio para que o arquivo seja processado
+  failed_to_import: 
+    Não foi possível importar os dados deste arquivo. 
+    Siga as instruções de envio para que o arquivo seja processado.
   activerecord:
     errors:
       messages:
