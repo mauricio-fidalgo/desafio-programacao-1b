@@ -16,7 +16,7 @@ instalação de diferentes versões ruby.
 
 Esta aplicação necessita que o ruby `2.3.1` esteja instalado, 
 para instalar utilizando o RVM usar `$ rvm install ruby-2.3.1`. 
-Após a versão ser definida é necessário que a gem bundleri também 
+Após a versão ser definida é necessário que a gem bundler também 
 seja instalada, execute o comando `$ gem install bundler`.
 
 Após a instalação do bundler basta executar `$ bundle install`
@@ -30,4 +30,5 @@ Executar o sistema utilizando o comando `$ bundle exec rails s`.
 ## Testes
 
 O sistema faz uso do RSpec para testar as suas funcionalidades.
-execute `$ bundle exec rspec`.
+Execute `$ bundle exec rspec` para verificar se a integridade do
+sistema.

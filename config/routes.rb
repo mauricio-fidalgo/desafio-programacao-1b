@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/', controller: :sold_products, action: :index
+  post '/', controller: :sold_products, action: :create
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
