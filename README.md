@@ -25,9 +25,7 @@ funcionamento do sistema.
 
 ## Execução
 
-Antes de executar o sistema é necessário que o banco de dados seja criado.
-
-Para criar o banco de dados execute `$ bundle exec rake db:create` e em seguida `$ bundle exec rake db:migrate`
+Antes de executar o sistema é necessário que o banco de dados seja criado. Para criar o banco de dados execute `$ bundle exec rake db:create` e em seguida `$ bundle exec rake db:migrate`
 
 Executar o sistema utilizando o comando `$ bundle exec rails s`.
 
