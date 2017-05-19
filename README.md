@@ -30,7 +30,7 @@ Para criar o banco de dados execute `$ bundle exec rake db:create`
 e em seguida `$ bundle exec rake db:migrate`
 
 Executar o sistema utilizando o comando `$ bundle exec rails s`. 
-Para visualizar o sistema em andamento acesse a url [http://127.0.0.1:3000](http://127.0.0.1:3000)
+Para visualizar o sistema em funcionamento acesse a url [http://127.0.0.1:3000](http://127.0.0.1:3000)
 em seu navegador de preferência.
 
 ## Testes
