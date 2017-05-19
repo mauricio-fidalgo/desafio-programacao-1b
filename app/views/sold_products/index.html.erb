@@ -10,7 +10,7 @@
   <fieldset id="new">
 	<legend>Cadastrar Vendas</legend>
 	<% flash.each do |name, message| %>
-	  <p><%= t(name) %>: <%= message %></p>
+			<p class='<%= name %>'><%= t(name) %>: <%= message %></p>
 	<% end %>
   	<p>
 	  <%= label_tag do %>Arquivo de vendas<% end %>
@@ -72,3 +72,10 @@ Snake Plissken  R$20 Sneakers for R$5   5.0 4   123 Fake St Sneaker Store Empori
   </table>
 <% end %>
 <p><a href="#">[Topo]</a></p>
+
+<script>
+var flashMessage = document.getElementsByClassName('message');
+if(flashMessage.length){
+	document.getElementById('list').scrollIntoView()
+}
+</script>

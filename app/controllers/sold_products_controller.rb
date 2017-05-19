@@ -15,6 +15,7 @@ class SoldProductsController < ApplicationController
       tmp_file.close
       
       if saved
+        @sold_products = SoldProduct.all
         flash[:message] = I18n.t(:sucessfully_imported)
       else
         flash[:error] = I18n.t(:failed_to_import)
